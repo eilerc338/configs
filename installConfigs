@@ -6,4 +6,4 @@ cp ./.bash_aliases ~/
 cp ./.bash_profile ~/
 cp ./.bashrc ~/
 
-cp ./settings.json "$LOCALAPPDATA"\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
+cp ./settings.json "$LOCALAPPDATA"/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
