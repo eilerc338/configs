@@ -26,15 +26,6 @@
         {
             "command": 
             {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "id": "User.splitPane.A6751878"
-        },
-        {
-            "command": 
-            {
                 "action": "moveFocus",
                 "direction": "down"
             },
@@ -43,6 +34,15 @@
         {
             "command": "find",
             "id": "User.find"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "id": "User.splitPane.A6751878"
         },
         {
             "command": 
@@ -87,19 +87,15 @@
     [
         {
             "id": null,
-            "keys": "ctrl+shift+k"
-        },
-        {
-            "id": null,
             "keys": "ctrl+c"
         },
         {
             "id": null,
-            "keys": "alt+right"
+            "keys": "ctrl+shift+k"
         },
         {
             "id": null,
-            "keys": "alt+up"
+            "keys": "ctrl+v"
         },
         {
             "id": "User.find",
@@ -107,7 +103,11 @@
         },
         {
             "id": null,
-            "keys": "ctrl+v"
+            "keys": "alt+up"
+        },
+        {
+            "id": null,
+            "keys": "alt+right"
         },
         {
             "id": null,
@@ -192,6 +192,7 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
+                "cursorShape": "filledBox",
                 "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
                 "hidden": false,
                 "name": "Git Bash",
