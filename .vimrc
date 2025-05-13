@@ -16,8 +16,11 @@ Plug 'preservim/tagbar'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'romainl/vim-cool'
-Plug 'morhetz/gruvbox'
 Plug 'justinmk/vim-sneak'
+
+" colorschemes
+Plug 'morhetz/gruvbox'
+Plug 'sainnhe/gruvbox-material'
 "Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --clangd-completer' }
 call plug#end()
 
@@ -237,10 +240,19 @@ if has('syntax') && has('eval')
   packadd! matchit
 endif
 
-" colorscheme habamax
-colorscheme gruvbox
-set termguicolors
+"gruvbox-materials
+if has('termguicolors')
+	set termguicolors
+endif
+" For dark version.
 set background=dark
+" Set contrast.
+" This configuration option should be placed before `colorscheme gruvbox-material`.
+" Available values: 'hard', 'medium'(default), 'soft'
+let g:gruvbox_material_background = 'medium'
+" For better performance
+let g:gruvbox_material_better_performance = 1
+colorscheme gruvbox-material
 
 syntax on
 
