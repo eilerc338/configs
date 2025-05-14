@@ -8,5 +8,5 @@
 [alias]
 	lg = !git log --pretty=format:\"%C(auto)%h%Creset -%C(auto)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -20
 	br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:dim green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
-[core]
-	editor = vim --clean
+#[core]
+#	editor = vim --clean
