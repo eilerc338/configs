@@ -2,3 +2,5 @@
 test -f ~/.profile && . ~/.profile
 test -f ~/.bashrc && . ~/.bashrc
 
+eval "$(fnm env --use-on-cd --shell bash)"
+
