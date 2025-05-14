@@ -16,12 +16,12 @@ Plug 'preservim/tagbar'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'romainl/vim-cool'
-Plug 'justinmk/vim-sneak'
 
 " colorschemes
-Plug 'morhetz/gruvbox'
+"Plug 'morhetz/gruvbox'
 Plug 'sainnhe/gruvbox-material'
 "Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --clangd-completer' }
+" Plug 'justinmk/vim-sneak'
 call plug#end()
 
 
