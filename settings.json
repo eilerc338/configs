@@ -192,9 +192,16 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
+                "colorScheme": "Ottosson",
                 "cursorShape": "filledBox",
+                "font": 
+                {
+                    "face": "Cascadia Mono",
+                    "weight": "medium"
+                },
                 "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
                 "hidden": false,
+                "intenseTextStyle": "bright",
                 "name": "Git Bash",
                 "pathTranslationStyle": "msys2",
                 "source": "Git"
