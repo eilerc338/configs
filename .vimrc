@@ -100,13 +100,18 @@ vnoremap # y ?<C-r>0<CR>
 " fzf.vim
 map <leader>f :Files<CR>
 map <leader>b :Buffers<CR>
-"nmap <leader>rr "ryiw :Rg <cword><CR>
-nmap <leader>rr m' "ryiw :Rg <C-r>r<CR>
+
+" <C-r>r paste in contents of r register
+"nmap <leader>rr m' "ryiw :Rg \<<C-r>r\><CR>
+" this mapping allows to search for a whole word only and saves it in r
+" register
+nmap <leader>rr m' "ryiw :let @r="\\<<C-r>r\\>"<CR> :Rg <C-r>r<CR>
 nmap <leader>r m' :Rg <C-r>r<CR>
 vmap <leader>rr m' "ry :Rg <C-r>r<CR>
 let g:fzf_vim = {}
+let g:fzf_layout = { 'window': { 'width': 0.98, 'height': 0.8 } }
 let g:fzf_preview_window = ['up:60%:hidden', 'ctrl-/']
-let g:fzf_vim.grep_multi_line = 1
+let g:fzf_vim.grep_multi_line = 2
 
 " Exuberant tags: rebuild tags in current folder
 "nmap <leader>tt :!(cd %:p:h;ctags *.[ch])&<CR>
@@ -249,7 +254,7 @@ set background=dark
 " Set contrast.
 " This configuration option should be placed before `colorscheme gruvbox-material`.
 " Available values: 'hard', 'medium'(default), 'soft'
-let g:gruvbox_material_background = 'medium'
+let g:gruvbox_material_background = 'hard'
 " For better performance
 let g:gruvbox_material_better_performance = 1
 colorscheme gruvbox-material
