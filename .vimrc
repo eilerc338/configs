@@ -80,12 +80,12 @@ set omnifunc=syntaxcomplete#Complete
 " custom mappings
 map gg gg^
 map G G^
-map <leader>ev :e ~/.vimrc <CR>
+map <leader>ev :e ~/.vimrc<CR>
 map <leader>dz <C-]>
 map <leader>dm <C-]>
 map <leader>d <C-]>
-map <leader>dt <C-]> zt
-map <leader>db <C-]> zb
+map <leader>dt <C-]>zt
+map <leader>db <C-]>zb
  "save path of current file
 map <leader>p :let @+=expand("%:p:h")<CR>
 map <leader>o :let @+=expand("%")<CR>
@@ -100,14 +100,12 @@ vnoremap # y ?<C-r>0<CR>
 " fzf.vim
 map <leader>f :Files<CR>
 map <leader>b :Buffers<CR>
-
 " <C-r>r paste in contents of r register
-"nmap <leader>rr m' "ryiw :Rg \<<C-r>r\><CR>
 " this mapping allows to search for a whole word only and saves it in r
 " register
-nmap <leader>rr m' "ryiw :let @r="\\<<C-r>r\\>"<CR> :Rg <C-r>r<CR>
-nmap <leader>r m' :Rg <C-r>r<CR>
-vmap <leader>rr m' "ry :Rg <C-r>r<CR>
+nmap <leader>rr m'"ryiw<C-o>:let @r="\\<<C-r>r\\>"<CR>:Rg <C-r>r<CR>
+nmap <leader>r m':Rg <C-r>r<CR>
+vmap <leader>rr m'"ry:Rg <C-r>r<CR>
 let g:fzf_vim = {}
 let g:fzf_layout = { 'window': { 'width': 0.98, 'height': 0.8 } }
 let g:fzf_preview_window = ['up:60%:hidden', 'ctrl-/']
