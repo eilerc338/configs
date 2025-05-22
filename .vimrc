@@ -114,9 +114,6 @@ let g:fzf_vim.grep_multi_line = 2
 " Exuberant tags: rebuild tags in current folder
 "nmap <leader>tt :!(cd %:p:h;ctags *.[ch])&<CR>
 nmap <leader>tt :!(cd %:p:h;ctags *)&<CR>
-"This unsets the "last search pattern" register by hitting return
-" nnoremap <silent> <CR> :noh<CR>
-nnoremap <silent> <leader>/ :noh<CR>
 
 noremap <C-e> 5<C-e>
 noremap <C-y> 5<C-y>
