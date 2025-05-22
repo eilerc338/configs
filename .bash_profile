@@ -4,3 +4,5 @@ test -f ~/.bashrc && . ~/.bashrc
 
 eval "$(fnm env --use-on-cd --shell bash)"
 
+# leaving this as an example. These options are now in .vimrc
+#export FZF_DEFAULT_OPTS="--wrap --wrap-sign='  ' --layout=reverse --gap"

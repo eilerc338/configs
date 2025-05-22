@@ -109,7 +109,8 @@ vmap <leader>rr m'"ry:Rg <C-r>r<CR>
 let g:fzf_vim = {}
 let g:fzf_layout = { 'window': { 'width': 0.98, 'height': 0.8 } }
 let g:fzf_preview_window = ['up:60%:hidden', 'ctrl-/']
-let g:fzf_vim.grep_multi_line = 2
+let g:fzf_vim.grep_multi_line = 0
+let g:fzf_vim.rg_options = '--wrap --wrap-sign="  " --layout=reverse --gap'
 
 " Exuberant tags: rebuild tags in current folder
 "nmap <leader>tt :!(cd %:p:h;ctags *.[ch])&<CR>
