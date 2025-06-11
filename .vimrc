@@ -253,9 +253,15 @@ set background=dark
 let g:gruvbox_material_background = 'hard'
 " For better performance
 let g:gruvbox_material_better_performance = 1
+let g:gruvbox_material_foreground = 'material'
 colorscheme gruvbox-material
 
 syntax on
 
 " My modifications to color scheme
 "hi MatchParen cterm=bold ctermbg=none ctermfg=darkblue
+
+" these modifications are for gruvbox-material. allows strings to be a different
+" color from function names.
+hi String ctermfg=175 guifg=#d3869b
+hi Character ctermfg=175 guifg=#d3869b
