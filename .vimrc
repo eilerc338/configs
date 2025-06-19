@@ -40,7 +40,9 @@ set clipboard=unnamed "windows
 set laststatus=2
 set confirm
 set hidden
-set nowrap
+set wrap
+set breakindent
+let &showbreak= '    '
 set linebreak
 "set splitright
 set splitbelow
@@ -68,7 +70,7 @@ set listchars=tab:⇤–⇥,space:·,trail:·,precedes:⇠,extends:⇢,nbsp:×  
 "set tags=./tags,tags,/usr/include/tags
 "let &tags .= ','.expand("%:p:h")
 command ResetTags set tags=./tags,tags
-"For this to work, you need to have to main tags file open
+"For this to work, you need to have the main tags file open
 command SetTags set tags=./tags,tags <bar> let &tags .= ','.expand("%:p")
 
 "
